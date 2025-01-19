@@ -1,0 +1,175 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+html{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+div.Header{
+    height: 90px;
+    border-bottom: 0.01px groove #d6d3d3; 
+    position:sticky;
+}
+h1.Name{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 140%;
+}
+button{
+    border:none;
+    color:black;
+    font-size: 15px;
+    background-color: white;
+    display:inline-block;
+    cursor: pointer;
+    padding: 2px 14px;
+    position: relative;
+    line-height:140%;
+}
+button:hover{
+    text-decoration: underline;
+    text-decoration-thickness:10%; 
+    text-decoration-color: rgb(240, 112, 7);
+    color:rgb(240, 112, 7);
+}
+button.Home,.About,.Projects,.Contact{
+    top: 30px;
+    margin-left: 5px;
+}
+button.Home{
+    padding-left: 50px;
+}
+button.Hire{
+   position:absolute;
+   top:25px;
+   right: 100px;
+   border: 2px solid rgb(240, 112, 7);
+   font-size: 27px;
+   width: 160px;
+   height: 45px;
+}
+button.Hire:hover{
+    transition-duration: 0.3s ease-in-out;
+    background-color: rgb(240, 112, 7);
+    color:white;
+    text-decoration: none;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: 0.8;
+}
+button.Hire span {
+    position: relative;
+    transition: 0.1s ease-in-out;
+    font-size: 18px;
+    top:-2px;
+  }
+button.Hire span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 1;
+    top: 1.9;
+    right: -7px;
+    transition: 0.5s ease-in-out;
+    color:white;
+  }
+button.Hire:hover span{
+    padding-right: 15px;
+    transition: 0.2s ease-in-out;
+}
+.button.Hire:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+div.Intro{
+    padding-top: 5%;
+    display: flex;
+    height: 600px;
+}
+div.ProfileImg{
+    margin-left: 60px;
+    height: auto;
+    overflow: hidden;
+    flex-shrink: 0;
+    width:40%;
+}
+img{
+    width:750px;
+    max-width: 100%;
+    display:inline-block;
+    margin:auto;
+    transition: 3s ease-in,1s ease-out;
+}
+img:hover{
+    transform:scale(1.05);
+    transform-origin: 50% 50%;
+}
+div.IntroText{
+    margin-left:50px;
+}
+.PersonalDisc{
+    position: relative;
+    padding-top: 10px;
+    font-size: 3.5em;
+    font-weight: 800;
+}
+.PersonalDiscName{
+    padding-top: 10%;
+    position: relative;
+    text-align: justify;
+    font-size: 3em;
+    font-weight: 500;
+}
+div.Qualifications{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    background-color:#F5F5F5;
+}
+.QualificationsHeader{
+    display:block;
+    padding-top: 5px;
+    text-align: center;
+    font-size:2em;
+}
+.Education{
+    margin-left: 200px;
+    width:800px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+}
+p.QualificationsTitle{
+    margin-top: 18%;
+    height: auto;
+    width:auto;
+    display: block;
+}
+.EduDesc{
+    width: auto;
+    padding-top: 50px;
+    padding-left: 50px;
+    display:flex;
+    flex-direction: column;
+}
+.EnggTitle{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.EnggDesc{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.Plus2Title{
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+.Plus2Desc{
+    font-size: 20px;
+    font-weight: lighter;
+}
