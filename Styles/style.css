@@ -36,7 +36,7 @@ button:hover{
     text-decoration-color: rgb(240, 112, 7);
     color:rgb(240, 112, 7);
 }
-button.Home,.About,.Projects,.Contact{
+button.Home,.About,.Projects,.DownloadCV{
     top: 30px;
     margin-left: 5px;
 }
@@ -71,7 +71,7 @@ button.Hire span:after {
     position: absolute;
     opacity: 1;
     top: 1.9;
-    right: -7px;
+    right: -8px;
     transition: 0.5s ease-in-out;
     color:white;
   }
@@ -132,7 +132,7 @@ div.Qualifications{
 }
 .QualificationsHeader{
     display:block;
-    padding-top: 5px;
+    padding-top: 7px;
     text-align: center;
     font-size:2em;
 }
@@ -144,7 +144,7 @@ div.Qualifications{
     font-size: 2em;
 }
 p.QualificationsTitle{
-    margin-top: 18%;
+    margin-top: 16%;
     height: auto;
     width:auto;
     display: block;
@@ -173,3 +173,45 @@ p.QualificationsTitle{
     font-size: 20px;
     font-weight: lighter;
 }
+
+.About_Me{
+    margin:20px 5px 20px 5px;
+    padding:20px 0 20px 50px;
+    display: flex;
+    background-color: #F5F5F5;
+}
+.AboutDesc{
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width:55%;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.AboutTitle{
+    text-align: center;
+    width:40%;
+    vertical-align: center;
+    line-height:300px;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
