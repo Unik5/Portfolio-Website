@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Innovating with Web3 | Unique Lama</title>
     <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/mobile.css" />
   </head>
 
   <body>
-    <div class="Header" , id="persistentDiv">
-      <button class="Home">Home</button>
-      <button class="About">About Me</button>
-      <button class="Projects">Projects</button>
-      <button class="DownloadCV">Download CV</button>
+    <nav class="Header" id="persistentDiv">
+      <button class="nav-button" id="Home">Home</button>
+      <button class="nav-button" id="About">About Me</button>
+      <button class="nav-button" id="Projects">Projects</button>
+      <button class="nav-button" id="Donwload_CV">Download CV</button>
       <h1 class="Name">Unique Lama</h1>
       <button class="Hire"><span>Hire Me</span></button>
-    </div>
+    </nav>
 
-    <div class="Intro">
-      <div class="ProfileImg">
-        <img src="Images/ProfilePic.jpg" alt="Profile Picture" />
-      </div>
+    <div class="intro">
+      <section class="ProfileImg">
+        <img
+          src="./Images/ProfilePic.jpg"
+          alt="Unique Lama's Profile Picture"
+        />
+      </section>
       <div class="IntroText">
         <h2 class="PersonalDiscName">Hello, I am Unique Lama.</h2>
         <p class="PersonalDisc">
-          A blockchain enthuiast <br />and smart contract <br />
+          A blockchain enthusiast <br />and smart contract <br />
           developer.
         </p>
       </div>
@@ -70,6 +74,8 @@
       <div class="AboutTitle">About Me</div>
     </div>
 
+    <button id="scrollTop" onclick="scrollToTop()">⬆️</button>
+    <!-- <button id="darkModeToggle">🌙 Dark Mode</button> -->
     <footer>
       <p>
         &copy; 2025 Unique Lama. All Rights Reserved. <br />
@@ -84,5 +90,6 @@
         >
       </p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
