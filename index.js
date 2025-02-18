@@ -47,3 +47,26 @@ document.getElementById("Donwload_CV").addEventListener("click", function() {
   link.download = "Unique_Lama_CV.pdf";  // Specify the download filename
   link.click();  // Programmatically trigger a click to download the PDF
 });
+
+
+  const modal = document.getElementById("contactModal");
+  const hireMeBtn = document.getElementById("ContactBtn");
+  const closeBtn = document.querySelector(".close");
+
+  // Open modal when clicking Hire Me button
+  hireMeBtn.addEventListener("click", function () {
+    modal.style.display = "flex";
+  });
+
+  // Close modal when clicking close button
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  // Close modal when clicking outside modal content
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+

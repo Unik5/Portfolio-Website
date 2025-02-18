@@ -33,8 +33,27 @@
       <button class="nav-button" id="Projects">Projects</button>
       <button class="nav-button" id="Donwload_CV">Download CV</button>
       <h1 class="Name">Unique Lama</h1>
-      <button class="Hire"><span>Hire Me</span></button>
+      <button class="Hire" id="ContactBtn"><span>Contact Me</span></button>
     </nav>
+
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" required></textarea>
+
+          <button type="submit" class="send">Send</button>
+        </form>
+      </div>
+    </div>
 
     <div class="intro">
       <section class="ProfileImg">
